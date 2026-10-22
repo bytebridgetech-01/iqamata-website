@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iQamata LiKhaya NPO | Empowering Communities</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- Netlify Identity Widget for Admin Login -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-[#F5F2EB] text-[#2C3531] font-sans antialiased selection:bg-[#4A5D4E] selection:text-white">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#F5F2EB]/95 backdrop-blur-md border-b border-[#D8D2C2] transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo Header -->
+        <a href="#home" class="flex items-center space-x-3 group">
+          <img src="logo.jpg" alt="iQamata LiKhaya Logo" class="w-10 h-10 object-cover rounded-full shadow-sm transition-transform group-hover:scale-105" />
+          <div class="flex flex-col">
+            <span class="font-serif text-xl font-bold tracking-tight text-[#2C3531]">iQamata LiKhaya</span>
+            <span class="text-[10px] tracking-widest uppercase text-[#8C7A6B] font-semibold">Non-Profit Organisation</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <a href="#about" class="hover:text-[#4A5D4E] transition-colors">About Us</a>
+          <a href="#pillars" class="hover:text-[#4A5D4E] transition-colors">Core Pillars</a>
+          <a href="#impact" class="hover:text-[#4A5D4E] transition-colors">Impact</a>
+          <a href="#governance" class="hover:text-[#4A5D4E] transition-colors">Leadership</a>
+          <a href="#strategy" class="hover:text-[#4A5D4E] transition-colors">2026 Strategy</a>
+          <a href="#contact" class="bg-[#4A5D4E] text-white px-5 py-2.5 rounded-full hover:bg-[#3B4A3E] transition-all shadow-sm">Get In Touch</a>
+        </nav>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-[#2C3531] p-2 focus:outline-none" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#F5F2EB] border-b border-[#D8D2C2] px-4 pt-2 pb-6 space-y-3">
+      <a href="#about" class="mobile-nav-link block text-base font-medium text-[#2C3531] py-2">About Us</a>
+      <a href="#pillars" class="mobile-nav-link block text-base font-medium text-[#2C3531] py-2">Core Pillars</a>
+      <a href="#impact" class="mobile-nav-link block text-base font-medium text-[#2C3531] py-2">Impact</a>
+      <a href="#governance" class="mobile-nav-link block text-base font-medium text-[#2C3531] py-2">Leadership</a>
+      <a href="#strategy" class="mobile-nav-link block text-base font-medium text-[#2C3531] py-2">2026 Strategy</a>
+      <a href="#contact" class="mobile-nav-link block text-center bg-[#4A5D4E] text-white px-5 py-2.5 rounded-full mt-4">Get In Touch</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-[#EFEAE1] to-[#F5F2EB] border-b border-[#D8D2C2]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center space-x-2 bg-[#E2DACB] text-[#4A5D4E] text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full">
+            <span>Reg No: 307-938 NPO</span>
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal leading-tight text-[#2C3531]">
+            Building Community Bridges Since 2021
+          </h1>
+          <p class="text-lg text-[#555] leading-relaxed max-w-2xl">
+            From grassroots beginnings to sustainable impact. We empower rural communities in Cofimvaba through education, health, and social development.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#contact" class="bg-[#4A5D4E] text-white px-7 py-3.5 rounded-full hover:bg-[#3B4A3E] transition-all shadow-md font-medium text-sm">Partner With Us</a>
+            <a href="#impact" class="border border-[#8C7A6B] text-[#2C3531] px-7 py-3.5 rounded-full hover:bg-[#E2DACB]/50 transition-all font-medium text-sm">View Our Track Record</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-md bg-white/60 backdrop-blur border border-[#D8D2C2] p-8 rounded-3xl shadow-xl text-center">
+            <!-- Hero Logo Image -->
+            <img src="logo.jpg" alt="iQamata LiKhaya Logo" class="w-36 h-36 mx-auto mb-6 object-cover rounded-full border-2 border-[#D8D2C2] shadow-md" />
+            <h2 class="font-serif text-2xl font-bold text-[#2C3531]">iQamata LiKhaya</h2>
+            <p class="text-xs uppercase tracking-widest text-[#8C7A6B] font-semibold mt-1">Non-Profit Organisation</p>
+            <p class="text-xs text-[#666] mt-4 italic">Qamata Nogate Township, Cofimvaba, Eastern Cape</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 border-b border-[#D8D2C2]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#2C3531]">Organisational Overview</h2>
+        <div class="w-16 h-0.5 bg-[#4A5D4E] mx-auto mt-4 mb-6"></div>
+        <p class="text-base text-[#555] leading-relaxed">
+          Formally registered in 2024, our grassroots work commenced in 2021 through targeted interventions addressing urgent community needs across the Intsika Yethu Municipality.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div class="bg-white/80 p-8 rounded-2xl border border-[#D8D2C2] shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#E2DACB] rounded-xl flex items-center justify-center text-[#4A5D4E] text-xl mb-6">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold mb-3">Our Mission</h3>
+          <p class="text-[#555] leading-relaxed">
+            To empower Cofimvaba communities through targeted programmes in education, health, and social development, creating sustainable pathways to opportunity and self-reliance.
+          </p>
+        </div>
+
+        <div class="bg-white/80 p-8 rounded-2xl border border-[#D8D2C2] shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#E2DACB] rounded-xl flex items-center justify-center text-[#4A5D4E] text-xl mb-6">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3 class="font-serif text-2xl font-semibold mb-3">Our Vision</h3>
+          <p class="text-[#555] leading-relaxed">
+            A thriving, resilient Eastern Cape where every community member has the tools, support, and opportunity to realize their full potential and contribute to collective prosperity.
+          </p>
+        </div>
+      </div>
+
+      <!-- Strategic Advantages Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-[#EFEAE1] p-6 rounded-xl border border-[#D8D2C2]">
+          <h4 class="font-bold text-[#2C3531] mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-school text-[#4A5D4E]"></i> Deep Embeddedness
+          </h4>
+          <p class="text-xs text-[#555] leading-relaxed">Direct access to 3 local schools and hundreds of families through trusted relationships.</p>
+        </div>
+        <div class="bg-[#EFEAE1] p-6 rounded-xl border border-[#D8D2C2]">
+          <h4 class="font-bold text-[#2C3531] mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-chart-line text-[#4A5D4E]"></i> Proven Capability
+          </h4>
+          <p class="text-xs text-[#555] leading-relaxed">Consistent delivery of annual programmes with clear, measurable outcomes since 2021.</p>
+        </div>
+        <div class="bg-[#EFEAE1] p-6 rounded-xl border border-[#D8D2C2]">
+          <h4 class="font-bold text-[#2C3531] mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-handshake text-[#4A5D4E]"></i> Strategic Approach
+          </h4>
+          <p class="text-xs text-[#555] leading-relaxed">Successful collaboration with government departments and private sector leaders.</p>
+        </div>
+        <div class="bg-[#EFEAE1] p-6 rounded-xl border border-[#D8D2C2]">
+          <h4 class="font-bold text-[#2C3531] mb-2 flex items-center gap-2">
+            <i class="fa-solid fa-seedling text-[#4A5D4E]"></i> Sustainable Models
+          </h4>
+          <p class="text-xs text-[#555] leading-relaxed">Community-owned initiatives designed specifically for long-term lasting impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Pillars Section -->
+  <section id="pillars" class="py-20 bg-[#EFEAE1] border-b border-[#D8D2C2]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#2C3531]">Core Strategic Pillars</h2>
+        <div class="w-16 h-0.5 bg-[#4A5D4E] mx-auto mt-4 mb-6"></div>
+        <p class="text-base text-[#555]">Four key areas guiding our holistic approach to community empowerment.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-[#F5F2EB] p-8 rounded-2xl border border-[#D8D2C2] flex flex-col justify-between">
+          <div>
+            <div class="text-[#4A5D4E] text-3xl mb-4"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3 class="font-serif text-xl font-bold mb-3">Education & Youth Development</h3>
+            <p class="text-xs text-[#666] mb-4">Educational access, career guidance, and essential skills development.</p>
+          </div>
+          <div class="pt-4 border-t border-[#D8D2C2]">
+            <span class="text-[11px] uppercase tracking-wider font-bold text-[#8C7A6B] block mb-2">Key Initiatives</span>
+            <ul class="text-xs text-[#444] space-y-1">
+              <li>• School Uniform Assistance</li>
+              <li>• Career Expo 2026</li>
+              <li>• Learner Support</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-[#F5F2EB] p-8 rounded-2xl border border-[#D8D2C2] flex flex-col justify-between">
+          <div>
+            <div class="text-[#4A5D4E] text-3xl mb-4"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h3 class="font-serif text-xl font-bold mb-3">Community Health & Wellness</h3>
+            <p class="text-xs text-[#666] mb-4">Substance abuse prevention and preventative healthcare awareness.</p>
+          </div>
+          <div class="pt-4 border-t border-[#D8D2C2]">
+            <span class="text-[11px] uppercase tracking-wider font-bold text-[#8C7A6B] block mb-2">Key Initiatives</span>
+            <ul class="text-xs text-[#444] space-y-1">
+              <li>• Drug & Alcohol Campaigns</li>
+              <li>• Wellness Workshops</li>
+              <li>• Department Collaborations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-[#F5F2EB] p-8 rounded-2xl border border-[#D8D2C2] flex flex-col justify-between">
+          <div>
+            <div class="text-[#4A5D4E] text-3xl mb-4"><i class="fa-solid fa-people-roof"></i></div>
+            <h3 class="font-serif text-xl font-bold mb-3">Cultural Preservation & Cohesion</h3>
+            <p class="text-xs text-[#666] mb-4">Intergenerational unity, heritage preservation, and elder care.</p>
+          </div>
+          <div class="pt-4 border-t border-[#D8D2C2]">
+            <span class="text-[11px] uppercase tracking-wider font-bold text-[#8C7A6B] block mb-2">Key Initiatives</span>
+            <ul class="text-xs text-[#444] space-y-1">
+              <li>• Elder Appreciation Events</li>
+              <li>• Cultural Celebrations</li>
+              <li>• Youth-Elder Dialogues</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-[#F5F2EB] p-8 rounded-2xl border border-[#D8D2C2] flex flex-col justify-between">
+          <div>
+            <div class="text-[#4A5D4E] text-3xl mb-4"><i class="fa-solid fa-network-wired"></i></div>
+            <h3 class="font-serif text-xl font-bold mb-3">Strategic Partnerships</h3>
+            <p class="text-xs text-[#666] mb-4">Collaborative development and sustainable resource mobilisation.</p>
+          </div>
+          <div class="pt-4 border-t border-[#D8D2C2]">
+            <span class="text-[11px] uppercase tracking-wider font-bold text-[#8C7A6B] block mb-2">Key Initiatives</span>
+            <ul class="text-xs text-[#444] space-y-1">
+              <li>• Stakeholder Engagements</li>
+              <li>• Community-Donor Networks</li>
+              <li>• Local Business Alignment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Track Record & Program Cards Section -->
+  <section id="impact" class="py-20 border-b border-[#D8D2C2]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#2C3531]">Proven Track Record</h2>
+        <div class="w-16 h-0.5 bg-[#4A5D4E] mx-auto mt-4 mb-6"></div>
+        <p class="text-base text-[#555]">Delivering measurable outcomes and restoring dignity since 2021.</p>
+      </div>
+
+      <!-- Animated Stat Counters -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center mb-16">
+        <div class="bg-white/70 p-6 rounded-2xl border border-[#D8D2C2]">
+          <span class="stat-number font-serif text-4xl sm:text-5xl font-bold text-[#4A5D4E]" data-target="150">0</span><span class="font-serif text-3xl font-bold text-[#4A5D4E]">+</span>
+          <p class="text-xs font-semibold text-[#555] uppercase tracking-wider mt-2">Learners Supported / Yr</p>
+        </div>
+        <div class="bg-white/70 p-6 rounded-2xl border border-[#D8D2C2]">
+          <span class="stat-number font-serif text-4xl sm:text-5xl font-bold text-[#4A5D4E]" data-target="500">0</span><span class="font-serif text-3xl font-bold text-[#4A5D4E]">+</span>
+          <p class="text-xs font-semibold text-[#555] uppercase tracking-wider mt-2">Community Members Reached</p>
+        </div>
+        <div class="bg-white/70 p-6 rounded-2xl border border-[#D8D2C2]">
+          <span class="stat-number font-serif text-4xl sm:text-5xl font-bold text-[#4A5D4E]" data-target="3">0</span>
+          <p class="text-xs font-semibold text-[#555] uppercase tracking-wider mt-2">Local School Partners</p>
+        </div>
+        <div class="bg-white/70 p-6 rounded-2xl border border-[#D8D2C2]">
+          <span class="stat-number font-serif text-4xl sm:text-5xl font-bold text-[#4A5D4E]" data-target="3">0</span><span class="font-serif text-3xl font-bold text-[#4A5D4E]">+</span>
+          <p class="text-xs font-semibold text-[#555] uppercase tracking-wider mt-2">Years Active Service</p>
+        </div>
+      </div>
+
+      <!-- Program Details Cards with Real Photos -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: School Uniform Assistance -->
+        <div class="bg-white rounded-3xl p-6 border border-[#D8D2C2] shadow-sm hover:shadow-md transition-all group overflow-hidden">
+          <div class="h-48 rounded-2xl overflow-hidden mb-6 bg-[#E2DACB]/30 flex items-center justify-center">
+            <img src="shoes.jpg" alt="School Shoes Assistance Drive" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <h3 class="font-serif text-xl font-bold mb-2">School Uniform Assistance</h3>
+          <p class="text-xs text-[#666] leading-relaxed">
+            Restoring dignity to learners across 3 primary school partnerships by providing brand new shoes and complete uniforms annually.
+          </p>
+        </div>
+
+        <!-- Card 2: Substance Abuse & Health Campaigns -->
+        <div class="bg-white rounded-3xl p-6 border border-[#D8D2C2] shadow-sm hover:shadow-md transition-all group overflow-hidden">
+          <div class="h-48 rounded-2xl overflow-hidden mb-6 bg-[#E2DACB]/30 flex items-center justify-center">
+            <img src="clinic.jpg" alt="Health and Substance Abuse Campaign" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <h3 class="font-serif text-xl font-bold mb-2">Substance Abuse Campaigns</h3>
+          <p class="text-xs text-[#666] leading-relaxed">
+            Organising impactful awareness rallies and dialogues under the banner "There is no excuse for drug abuse" with local government support.
+          </p>
+        </div>
+
+        <!-- Card 3: Cultural & Elder Appreciation -->
+        <div class="bg-white rounded-3xl p-6 border border-[#D8D2C2] shadow-sm hover:shadow-md transition-all group overflow-hidden">
+          <div class="h-48 rounded-2xl overflow-hidden mb-6 bg-[#E2DACB]/30 flex items-center justify-center">
+            <img src="elders.jpg" alt="Cultural Elder Appreciation Event" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          </div>
+          <h3 class="font-serif text-xl font-bold mb-2">Cultural & Elder Appreciation</h3>
+          <p class="text-xs text-[#666] leading-relaxed">
+            Annual Christmas drives and elder honor ceremonies, distributing warm blankets, essential care items, and preserving intergenerational unity.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Governance & Team Section -->
+  <section id="governance" class="py-20 bg-[#EFEAE1] border-b border-[#D8D2C2]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#2C3531]">Governance & Leadership</h2>
+        <div class="w-16 h-0.5 bg-[#4A5D4E] mx-auto mt-4 mb-6"></div>
+        <p class="text-base text-[#555]">Combining strategic oversight with deep, trusted local relationships.</p>
+      </div>
+
+      <!-- Team Group Photo Banner -->
+      <div class="mb-14 rounded-3xl overflow-hidden border border-[#D8D2C2] shadow-md bg-white p-3">
+        <div class="relative h-72 sm:h-96 md:h-[450px] w-full rounded-2xl overflow-hidden">
+          <img src="team.jpg" alt="iQamata LiKhaya Leadership Team" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" />
+          <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#2C3531]/90 via-[#2C3531]/40 to-transparent p-6 text-white">
+            <p class="font-serif text-xl sm:text-2xl font-bold">The Leadership & Operational Team</p>
+            <p class="text-xs text-[#E2DACB] mt-1">Driving sustainable impact across Qamata Nogate Township & Cofimvaba.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Chairperson -->
+        <div class="bg-[#F5F2EB] p-6 rounded-2xl border border-[#D8D2C2] shadow-sm">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-[#8C7A6B]">Chairperson</span>
+          <h3 class="font-serif text-xl font-bold text-[#2C3531] mt-1">Thando Matanzima</h3>
+          <p class="text-xs text-[#666] mt-2">Strategic Oversight & Stakeholder Relations</p>
+          <p class="text-xs text-[#4A5D4E] font-medium mt-4"><i class="fa-solid fa-phone mr-1"></i> 072 326 7558</p>
+        </div>
+
+        <!-- Deputy Chairperson -->
+        <div class="bg-[#F5F2EB] p-6 rounded-2xl border border-[#D8D2C2] shadow-sm">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-[#8C7A6B]">Deputy Chairperson</span>
+          <h3 class="font-serif text-xl font-bold text-[#2C3531] mt-1">Camagu Fana</h3>
+          <p class="text-xs text-[#666] mt-2">Programme Development & Implementation</p>
+        </div>
+
+        <!-- Secretary -->
+        <div class="bg-[#F5F2EB] p-6 rounded-2xl border border-[#D8D2C2] shadow-sm">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-[#8C7A6B]">Secretary</span>
+          <h3 class="font-serif text-xl font-bold text-[#2C3531] mt-1">Nobahle Maneli</h3>
+          <p class="text-xs text-[#666] mt-2">Administrative Coordination & Records</p>
+          <p class="text-xs text-[#4A5D4E] font-medium mt-4"><i class="fa-solid fa-phone mr-1"></i> 067 619 7441</p>
+        </div>
+
+        <!-- Treasurer -->
+        <div class="bg-[#F5F2EB] p-6 rounded-2xl border border-[#D8D2C2] shadow-sm">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-[#8C7A6B]">Treasurer</span>
+          <h3 class="font-serif text-xl font-bold text-[#2C3531] mt-1">Asisithi Sejosengoe</h3>
+          <p class="text-xs text-[#666] mt-2">Financial Management & Accountability</p>
+        </div>
+
+        <!-- Marketing -->
+        <div class="bg-[#F5F2EB] p-6 rounded-2xl border border-[#D8D2C2] shadow-sm">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-[#8C7A6B]">Marketing & Comms</span>
+          <h3 class="font-serif text-xl font-bold text-[#2C3531] mt-1">Nzame Duna & Thulani Thembani</h3>
+          <p class="text-xs text-[#666] mt-2">Community Engagement & Awareness</p>
+        </div>
+
+        <!-- Community Liaison -->
+        <div class="bg-[#F5F2EB] p-6 rounded-2xl border border-[#D8D2C2] shadow-sm">
+          <span class="text-[10px] font-bold uppercase tracking-widest text-[#8C7A6B]">Community Liaison Officer</span>
+          <h3 class="font-serif text-xl font-bold text-[#2C3531] mt-1">Kholeka Rasane</h3>
+          <p class="text-xs text-[#666] mt-2">Grassroots Mobilization & Local Relations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Forward Strategy 2025-2026 -->
+  <section id="strategy" class="py-20 border-b border-[#D8D2C2]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-[#2C3531]">Forward Strategy: 2025-2026</h2>
+        <div class="w-16 h-0.5 bg-[#4A5D4E] mx-auto mt-4 mb-6"></div>
+        <p class="text-base text-[#555]">Upcoming flagship initiatives designed to expand our community impact.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Career Expo -->
+        <div class="bg-gradient-to-br from-white to-[#F5F2EB] p-8 rounded-3xl border border-[#D8D2C2] shadow-sm">
+          <div class="inline-block bg-[#4A5D4E] text-white text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider mb-4">Flagship Event</div>
+          <h3 class="font-serif text-2xl font-bold text-[#2C3531] mb-2">Career Expo 2026</h3>
+          <p class="text-sm text-[#555] mb-6">Bridging the gap between rural education and economic opportunity.</p>
+          <ul class="space-y-3 text-xs text-[#444]">
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#4A5D4E] mt-0.5"></i> <span><strong>Target:</strong> 300 Grade 12 learners from Intsika Yethu Municipality</span></li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#4A5D4E] mt-0.5"></i> <span><strong>Focus:</strong> Tertiary application support, skills pathways, and job readiness</span></li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#4A5D4E] mt-0.5"></i> <span><strong>Partners:</strong> Universities, TVET Colleges, SETAs, and Corporate Employers</span></li>
+          </ul>
+        </div>
+
+        <!-- Miss Qamata -->
+        <div class="bg-gradient-to-br from-white to-[#F5F2EB] p-8 rounded-3xl border border-[#D8D2C2] shadow-sm">
+          <div class="inline-block bg-[#8C7A6B] text-white text-xs px-3 py-1 rounded-full font-bold uppercase tracking-wider mb-4">Community Event</div>
+          <h3 class="font-serif text-2xl font-bold text-[#2C3531] mb-2">Miss Qamata 2026</h3>
+          <p class="text-sm text-[#555] mb-6">Showcasing local talent and fostering youth confidence and pride.</p>
+          <ul class="space-y-3 text-xs text-[#444]">
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#4A5D4E] mt-0.5"></i> <span>Platform for youth development and positive behavior modeling</span></li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#4A5D4E] mt-0.5"></i> <span>Community unity and rich cultural celebration</span></li>
+            <li class="flex items-start gap-2"><i class="fa-solid fa-check text-[#4A5D4E] mt-0.5"></i> <span>Local talent identification and mentorship opportunities</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <footer id="contact" class="bg-[#2C3531] text-[#F5F2EB] pt-20 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-[#4A5D4E]/50">
+        
+        <!-- Info Column -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="flex items-center space-x-3">
+            <img src="logo.jpg" alt="iQamata LiKhaya Logo" class="w-10 h-10 object-cover rounded-full shadow-sm" />
+            <span class="font-serif text-2xl font-bold">iQamata LiKhaya</span>
+          </div>
+          <p class="text-xs text-[#D8D2C2] leading-relaxed max-w-sm">
+            Partner with purpose. Together we can create lasting, sustainable impact in the Intsika Yethu Municipality.
+          </p>
+          <div class="space-y-3 text-xs text-[#D8D2C2]">
+            <!-- Live Google Maps Location Pin Link -->
+            <p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Qamata+Nogate+Township,+Cofimvaba,+Eastern+Cape" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="hover:text-[#E2DACB] underline decoration-dotted transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-location-dot text-[#E2DACB]"></i> 
+                <span>Qamata Nogate Township, Cofimvaba, Eastern Cape</span>
+              </a>
+            </p>
+            <!-- Clickable Email Link -->
+            <p>
+              <a href="mailto:iqamatalikhaya@gmail.com" class="hover:text-[#E2DACB] transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-envelope text-[#E2DACB]"></i> 
+                <span>iqamatalikhaya@gmail.com</span>
+              </a>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-file-contract text-[#E2DACB]"></i> 
+              <span>NPO Registration: 307-938 NPO</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="lg:col-span-7 bg-[#3B4A3E]/40 p-8 rounded-3xl border border-[#4A5D4E]/40">
+          <h3 class="font-serif text-2xl font-normal mb-2">Send Us a Message</h3>
+          <p class="text-xs text-[#D8D2C2] mb-6">Interested in partnering or donating? Get in touch with our leadership team.</p>
+          
+          <form id="contact-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input type="text" placeholder="Your Name" required class="w-full bg-[#2C3531] border border-[#4A5D4E] rounded-xl px-4 py-3 text-xs text-white placeholder-gray-400 focus:outline-none focus:border-[#E2DACB]"/>
+              <input type="email" placeholder="Your Email" required class="w-full bg-[#2C3531] border border-[#4A5D4E] rounded-xl px-4 py-3 text-xs text-white placeholder-gray-400 focus:outline-none focus:border-[#E2DACB]"/>
+            </div>
+            <textarea rows="4" placeholder="How would you like to collaborate?" required class="w-full bg-[#2C3531] border border-[#4A5D4E] rounded-xl px-4 py-3 text-xs text-white placeholder-gray-400 focus:outline-none focus:border-[#E2DACB]"></textarea>
+            <button type="submit" class="w-full bg-[#E2DACB] text-[#2C3531] font-bold py-3 rounded-xl hover:bg-white transition-colors text-xs tracking-wider uppercase">Send Message</button>
+          </form>
+          
+          <div id="form-status" class="hidden mt-4 text-xs p-3 rounded-lg bg-[#4A5D4E] text-white text-center">
+            Thank you! Your message has been sent. Our team will contact you shortly.
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 text-center text-[11px] text-[#8C7A6B]">
+        <p>&copy; 2026 iQamata LiKhaya NPO. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Netlify Identity Redirection -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
