@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Folder where uploaded photos & videos will be saved
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  # Collection for Announcements / News Updates
+  - name: "announcements"
+    label: "Announcements & News"
+    folder: "content/announcements"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Banner Image", name: "image", widget: "image", required: false }
+      - { label: "Details / Content", name: "body", widget: "markdown" }
+
+  # Collection for Event Photo & Video Gallery
+  - name: "events"
+    label: "Event Gallery & Media"
+    folder: "content/events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Event Title", name: "title", widget: "string" }
+      - { label: "Event Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "select", options: ["Education", "Health & Wellness", "Culture & Care", "Strategy"] }
+      - { label: "Event Description", name: "description", widget: "text" }
+      - { label: "Cover Photo", name: "photo", widget: "image", required: false }
+      - { label: "Video Upload (MP4)", name: "video", widget: "file", required: false }
